@@ -66,4 +66,4 @@ if __name__ == '__main__':
     session.add(geoffrey_kinuthia)
     session.commit()
 
-    print(f"Nw student Id is {geoffrey_kinuthia}. ")
+    print(f"Nw student Id is {geoffrey_kinuthia.id}. ")
