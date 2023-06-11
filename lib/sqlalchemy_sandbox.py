@@ -19,3 +19,8 @@ class Student(Base):
 if __name__ == '__main__':
     engine = create_engine('sqlite:///:memory:')
     Base.metadata.create_all(engine)
+
+    # here we are using our engine to configure a Session class
+    Session = sessionmaker(bind=engine)
+    # this Session class creates the session object 
+    session = Session()
